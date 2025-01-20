@@ -33,8 +33,10 @@ NAME = "claude-prompt-cache"
 def clear_cache_markers(messages: List[dict]):
     # just in case webui don't provide us clean message copies on each send
     for m in messages:
-        if isinstance(m["content"], dict) and "cache_control" in m["content"]:
-            del m["content"]["cache_control"]
+        if isinstance(m["content"], list):
+            for entry in m["content"]:
+                if "cache_control" in entry:
+                    del entry["cache_control"]
 
 
 def cache_message(message: dict):
