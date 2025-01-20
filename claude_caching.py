@@ -10,10 +10,10 @@ version: 0.1.0
 #
 # Four things for users to be aware of regarding Anthropic's caching:
 # 1. Cache hits are 90% cheaper than processing the input.
-# 2. Cache misses cost 20% more than for prompt processing.
+# 2. Cache misses cost 25% more than for prompt processing.
 # 3. The output price is the same regardless if caching is used or not.
 # 4. Antropic only caches prompts that exceed 1024 tokens for Sonnet, and 2048 for Heiku,
-#    which means users who are concerned about the 20% prompt processing bump for small
+#    which means users who are concerned about the 25% prompt processing bump for small
 #    prompts need not worry. Anthropic treats small prompts as uncached ones.
 #
 # To know about this script:
