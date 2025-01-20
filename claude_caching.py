@@ -3,7 +3,7 @@ title: Claude Caching
 author: jojje
 author_url: https://github.com/jojje
 funding_url: https://github.com/open-webui
-version: 0.1.0
+version: 0.1.1
 """
 
 # This script provides prompt prefix caching for Anthropic Claude models.
@@ -27,7 +27,7 @@ version: 0.1.0
 from pydantic import BaseModel, Field
 from typing import Optional, List
 
-NAME = "claude-prompt-cache"
+NAME = "claude-cache"
 
 
 def clear_cache_markers(messages: List[dict]):
