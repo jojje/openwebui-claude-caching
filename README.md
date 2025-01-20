@@ -8,4 +8,6 @@ for pros and cons as it relates to using caching and cost.
 To enable the claude models in the first place (if you haven't already), I recommend adding [this](https://openwebui.com/f/justinrahb/anthropic) 
 function first, which will add support for them to the webui.
 
+The function is also published on the Open-WebUI [website](https://openwebui.com/f/jojje/claude_caching).
+
 Happy $$$ savings.
